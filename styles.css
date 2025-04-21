@@ -1,0 +1,234 @@
+/* Emily LaMotte
+styles.CSS
+INFO1311.WW
+02/18/25
+*/
+html, body, h1, h2, h3, p, ul, li, form, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 10px auto;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+    margin: 10px 0; 
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #ccc;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main article {
+    text-align: left;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+main article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+main h2, main p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main li {
+    margin: 0 10px;
+}
+
+main ul li::before {
+    margin-right: 5px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group label {
+    margin-right: 10px;
+}
+
+video {
+    display: block;
+    max-width: 560px;
+    height: auto;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer nav {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #7FC2D6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    #wrapper {
+        width: 80%;
+    }
+    
+    nav {
+        text-align: left;
+    }
+    
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+    }
+
+    main {
+        text-align: left;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Bistro Cafe - Contact Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+          <!-- Emily LaMotte
+            contact.html
+            INFO1311.WW
+            Olberding
+            02/18/25
+            -->
+        <header>
+            <h1>The Bistro Cafe</h1>
+            <img src="logo.png" alt="The Bistro Cafe Logo" height="104" width="300">
+            <!-- 
+                created by: Emily LaMotte
+                used the online logo maker from the instructions
+            -->
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h2>Get in Touch</h2>
+                <form action="https://www.mccinfo.net/webresources/cgi-bin/formmail.asp" method="post">
+                    <input type="hidden" name="subject" value="INFO1311 Final Project Emily LaMotte"> 
+                    <input type="hidden" name="recipient" value="lolberding@mccneb.edu"> <input type="hidden" name="redirect" value="thankyou.html">
+                        <fieldset>
+                            <legend>Contact Information</legend>
+
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" name="first_name"><br><br>
+
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="last_name"><br><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"><br><br>
+
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone"><br><br>
+
+                            <label for="question">Question/Comment:</label>
+                            <textarea id="question" name="question"></textarea><br><br>
+
+                            <label>Communication Preference:</label><br>
+                            <div class="radio-group">
+                                <input type="radio" id="email_preference" name="communication_preference" value="email">
+                                <label for="email_preference">Email</label>
+                        
+                                <input type="radio" id="phone_preference" name="communication_preference" value="phone">
+                                <label for="phone_preference">Phone</label>
+                            </div><br><br>
+                            <div class="button-group">
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </div>
+                        </fieldset>
+                </form>
+            </article>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="specials.html">Specials</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2023 The Bistro Cafe</p>
+            <p><a href="mailto:emdrucker@mail.mccneb.edu">Emily LaMotte</a></p>
+        </footer>
+    </body>
+    </html>
